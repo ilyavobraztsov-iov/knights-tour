@@ -1,11 +1,11 @@
 {
   "name": "Ход Конём! / Knight's Tour",
   "short_name": "Ход Конём!",
-  "description": "Шахматная головоломка: 9 этапов от 5×5 до 10×10",
+  "description": "Шахматная головоломка 9 этапов",
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#0a0a18",
+  "background_color": "#140828",
   "theme_color": "#d4a843",
   "icons": [
     {
