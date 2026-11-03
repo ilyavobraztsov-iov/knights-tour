@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ход Конём! — нет соединения</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #140828;
+    color: #d4a843;
+    font-family: Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 24px;
+  }
+  .icon {
+    font-size: 72px;
+    margin-bottom: 24px;
+    opacity: 0.7;
+  }
+  h1 {
+    font-size: clamp(20px, 5vw, 32px);
+    margin-bottom: 16px;
+    color: #f0c040;
+  }
+  p {
+    font-size: clamp(14px, 3.5vw, 18px);
+    color: #b09060;
+    max-width: 320px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .hint {
+    font-size: clamp(12px, 3vw, 15px);
+    color: #7a6040;
+    margin-top: 32px;
+  }
+  button {
+    margin-top: 32px;
+    padding: 12px 32px;
+    background: #d4a843;
+    color: #140828;
+    border: none;
+    border-radius: 8px;
+    font-size: clamp(14px, 3.5vw, 18px);
+    font-family: Georgia, serif;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  button:active { opacity: 0.8; }
+</style>
+</head>
+<body>
+  <div class="icon">♞</div>
+  <h1>Ход Конём!</h1>
+  <p>Нет подключения к интернету.</p>
+  <p>Для первого запуска приложению нужен интернет, чтобы загрузить игру.</p>
+  <p class="hint">Подключитесь к сети и попробуйте снова.</p>
+  <button onclick="location.reload()">Повторить попытку</button>
+</body>
+</html>
