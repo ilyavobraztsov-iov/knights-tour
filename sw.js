@@ -1,10 +1,11 @@
-const CACHE = 'knights-v12';
+const CACHE = 'knights-v13';
 const FILES = [
   './',
   './index.html',
   './manifest.json',
   './icon-192.png',
-  './icon-512.png'
+  './icon-512.png',
+  './.well-known/assetlinks.json'
 ];
 
 self.addEventListener('install', e => {
