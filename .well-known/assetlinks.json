@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.ilyavobraztsov_iov.twa",
+        "sha256_cert_fingerprints": ["06:FC:02:7E:18:57:E7:8A:F9:2C:26:D6:2B:70:7F:92:E4:DA:56:DB:07:7A:8E:CD:28:17:94:CA:C7:10:5D:3C"]
+      }
+    }]
