@@ -3,6 +3,10 @@
 <head>
 <meta charset="utf-8">
 <script>
+// Pre-fetch assetlinks.json so TWA can verify domain on next launch (fixes address bar on first install)
+if (navigator.onLine) {
+  fetch('/.well-known/assetlinks.json', {cache: 'force-cache'}).catch(function(){});
+}
 // Show offline screen immediately if no network — prevents TWA address bar from appearing
 if (!navigator.onLine) {
   document.addEventListener('DOMContentLoaded', function() {
