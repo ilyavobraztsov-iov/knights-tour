@@ -1,11 +1,10 @@
-const CACHE = 'knights-v11';
+const CACHE = 'knights-v12';
 const FILES = [
   './',
   './index.html',
   './manifest.json',
   './icon-192.png',
-  './icon-512.png',
-  './offline.html'
+  './icon-512.png'
 ];
 
 self.addEventListener('install', e => {
@@ -25,17 +24,13 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-  // Only handle GET navigation requests with offline fallback
   if (e.request.method !== 'GET') return;
-
   e.respondWith(
     caches.match(e.request).then(cached => {
       if (cached) return cached;
-
       return fetch(e.request).catch(() => {
-        // Network failed — return offline page for navigation requests
         if (e.request.mode === 'navigate') {
-          return caches.match('./offline.html');
+          return caches.match('./index.html');
         }
       });
     })
